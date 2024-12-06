@@ -18,3 +18,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.SECONDARY: $(OBJS) $(SRCS)
