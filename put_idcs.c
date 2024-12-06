@@ -31,6 +31,6 @@ int ft_putchar(va_list arg)
 {
     char c;
     
-    c = (char)va_arg(arg, int);
+    c = va_arg(arg, int);
     return (write(1, &c, 1));
 }
